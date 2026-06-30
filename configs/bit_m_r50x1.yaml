@@ -1,0 +1,31 @@
+project: bacterial-bit-classifier
+model:
+  backbone: resnet50x1_bitm
+  n_classes: 22
+  image_size: 448
+training:
+  batch_size: 32
+  gradient_accumulation_steps: 16
+  effective_batch_size: 512
+  base_lr: 0.003
+  weight_decay: 0.0001
+  momentum: 0.9
+  fine_tuning_steps: 20000
+  validation_interval: 500
+  early_stopping_patience_steps: 3000
+augmentation:
+  random_rotation_degrees: 360
+  horizontal_flip: true
+  vertical_flip: true
+  brightness: 0.2
+  contrast: 0.2
+  saturation: 0.15
+  hue: 0.05
+  gaussian_noise_sigma: 0.02
+  random_erasing:
+    min_area: 0.02
+    max_area: 0.20
+  mixup_alpha: 0.2
+api:
+  max_upload_mb: 10
+  top_k: 3
