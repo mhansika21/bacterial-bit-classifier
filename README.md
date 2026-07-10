@@ -80,4 +80,4 @@ The training script is intentionally conservative: it validates the manifest and
 
 ## Medical disclaimer
 
-This is an academic prototype. It is not clinically validated and must not be used as a substitute for laboratory-confirmed bacterial identification.
+This is an academic prototype. It is "not clinically validated!!!" and must not be used as a substitute for laboratory-confirmed bacterial identification.
