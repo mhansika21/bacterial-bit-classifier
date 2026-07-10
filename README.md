@@ -1,4 +1,4 @@
-# Bacterial Classification Using Big Transfer
+# Bacterial Classification Using Big Transfer.
 
 Complete mini-project prototype based on the supplied report: a BiT-style bacterial microscopy classifier with preprocessing, Grad-CAM visualization, FastAPI inference API, React frontend, taxonomy metadata, and tests.
 
